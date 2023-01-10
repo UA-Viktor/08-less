@@ -50,4 +50,21 @@ const totalTitimePlayed = players.reduce(
     (totalTime, { timePlayed }) => totalTime + timePlayed,
     0,
 );
-console.log(totalTitimePlayed);
+// console.log(totalTitimePlayed);
+
+
+
+
+// считаем общую сумму товаров в корзине
+
+const cart = [
+    { label: 'Apples', price: 100, quantity: 2 },
+    { label: 'Bananas', price: 120, quantity: 3 },
+    { label: 'Lemons', price: 70, quantity: 4 },
+];
+
+
+const totalAmount = cart.reduce(
+    // (total, item) => total + item.price * item.quantity, 0,);
+    (total, {price, quantity}) => total + price * quantity, 0,);
+console.log(totalAmount);
