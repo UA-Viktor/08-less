@@ -18,10 +18,10 @@ const players = [
 
 console.table(players);
 
-// const playersName = players.map(player => {
-//     return player.name;
-//  });
-// console.log('playersName', playersName);
+const playersName = players.map(player => {
+    return player.name;
+ });
+console.log('playersName', playersName);
 
 
 
